@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!--META DATA TAGS-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jeff, Jeffery, Kimbrow, JS, JavaScript, Portfolio">
+    <meta name="description" content="This is my first attempt at a JS animation">
+    <!--TITLE-->
+    <title>Steganography</title>
+    <!--STYLESHEETS-->
+    <link href="/CSS/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&family=Raleway:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="/JS/steganography.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!--NAV-->
+
+
+    <!--MAIN CONTENT-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-11">
+                    <h2 class="title">Steganography with <strong>JavaScript</strong></h2>
+                    <p class="headingP">One of these pictures differes from the other but how?</p>
+                    <hr>
+                </div>
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="wrapper">
+                        <img class="media" src="/imgs/image.png" alt="this is the plain image">
+                        <p>This is an avatar given to me from HackTheBox.eu which is a Penitration Testing enviornment. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="wrapper">
+
+                        <img class="media" src="/imgs/download.png" alt="this is the encoded image">
+                        <p>But what is the difference between the two images when they look they exact same?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-small-12">
+                    <div class="wrapper">
+                        <h3>With a technique called <strong>Steganography</strong></h3>
+                        <p> Although the term was first used was in 1499 by Johannes Trithemius, modern Steganography entered the world in 1985. Steganography is the practice of concealing a file, message, image, or video within another file image or video.Typically,
+                            the message that is hidden looks to be part of something else. Like with the example above, being unnoticeable, by staying visible in a setting that masks presence. Steganographic encrypted messages doesn't attract as much
+                            attention as using conventional cryptography. Unless the person viewing the file knows to look for it, they wouldn't know that anything even happened. With the digital world we live in today JavaScript has become a easy way
+                            for us to be able to accomplish this. Thanks to the Steganography.js library created by <a class="a" href="www.peter-eigenschink.at">Peter Eigenschink</a></p>
+                        <br>
+                        <p>Check this library out in action! Download the image on the right to your computer. Click the Choose File button and find that image. Once you selected the image we have just downloaded, right click on the document and click inspect.
+                            Once inside the inspector click on conole to view the message I left!</p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Want to check out more of the projects I have done? Check out my Socail media below and also the link to check out my portfolio to find out more about me!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <input type="file" name="img" id="" accept="image/*" onchange="readURL(this)">
+
+    <div class="">Source Image: </div>
+    <img id="image1" src="">
+
+    <input id="text" type="text">
+    <button onclick="hideText()">Hide Message Into Image</button>
+
+    <input type="file" name="img1" id="" accept="image/*" onchange="decode(this)">
+
+
+
+
+    <!--FOOTER-->
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a class="linkedin" href="https://www.linkedin.com/in/jeff-kimbrow-2b7a17198/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="github" href="https://github.com/kimbrow-slice/"><i class="fab fa-github-alt"></i></a>
+                <a class="email" href="mailto:kimbrowjeff@gmail.com"><i class="fas fa-at"></i></a>
+            </div>
+            <div class="copyright">
+                <p class="copyright">COPYRIGHT 2020 JEFFERY KIMBROW</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--SCRIPTS-->
+    <script src="index.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fc5d2b5d29.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
