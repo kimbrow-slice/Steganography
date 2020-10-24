@@ -2,7 +2,7 @@
 
 //the library is called in successfully and we can now start using our object steg and the functions encode and decode
 
-steg.encode('Thank you for taking the time to check out my project! Check out my portfolio for more projects @ kimbrow-slice.github.io/JeffKimbrow/', image)
+steg.encode('someText', image)
 
 //the encode function takes in 2 parameters. first we are now going to insert the string we would like to encode the message, next we are also going to also going to call in the source of the image we are trying to put this message into
 
@@ -33,7 +33,7 @@ function readURL(input) {
 
 function hideText() {
 
-    document.querySelector('#media').src = steg.encode(document.querySelector('#text').value, imageDataUri);
+    document.querySelector('#image1').src = steg.encode(document.querySelector('#text').value, imageDataUri);
 
 }
 
@@ -41,10 +41,11 @@ function hideText() {
 //Now we are going to define the decode function
 
 function decode(input) {
+
     var reader = new FileReader();
     reader.onload = function(e) {
-
         console.log(steg.decode(e.target.result));
+        steg.decode(e.target.result)
     }
     reader.readAsDataURL(input.files[0]);
 }
