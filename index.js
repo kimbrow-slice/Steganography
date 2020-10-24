@@ -1,4 +1,4 @@
-/* console.log(steg);
+/* 
 
 //the library is called in successfully and we can now start using our object steg and the functions encode and decode
 
@@ -10,7 +10,6 @@ steg.encode('someText', image)
 steg.decode(image)
 
 //the decode function takes in 1 parameter. this returns the string that is encoded within this image
-*/
 
 
 var imageDataUri;
@@ -25,11 +24,7 @@ function readURL(input) {
     reader.readAsDataURL(input.files[0]);
 }
 
-// how reader.readAsDataURL works is within this input we will have a area containing the files that has been inserted by the user. Once this operation is complete the function gets triggered with the result of what the file has read
 
-
-
-//Now we are going to write the function to encode a message into the image the client uses once the submit button is clicked
 
 function hideText() {
 
@@ -44,8 +39,15 @@ function decode(input) {
 
     var reader = new FileReader();
     reader.onload = function(e) {
-        console.log(steg.decode(e.target.result));
-        steg.decode(e.target.result)
+        document.querySelector('#decoded').innerHTML = steg.decode(e.target.result);
+
     }
     reader.readAsDataURL(input.files[0]);
+
 }
+*/
+// how reader.readAsDataURL works is within this input we will have a area containing the files that has been inserted by the user. Once this operation is complete the function gets triggered with the result of what the file has read
+
+
+
+//Now we are going to write the function to encode a message into the image the client uses once the submit button is clicked

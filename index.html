@@ -29,21 +29,21 @@
             <div class="row">
                 <div class="col-md-offset-1 col-md-11">
                     <h2 class="title">Steganography with <strong>JavaScript</strong></h2>
-                    <p class="headingP">One of these pictures differes from the other but how?</p>
+                    <p class="headingP">One of these pictures differs from the other. Can you figure out which one it is?</p>
                     <hr>
                 </div>
 
 
                 <div class="col-md-6 col-sm-6">
                     <div class="wrapper">
-                        <img class="media" src="imgs/image.png" alt="this is the plain image">
-                        <p>This is an avatar given to me from HackTheBox.eu which is a Penitration Testing enviornment. </p>
+                        <img class="media" src="imgs/image2.png" alt="this is the plain image">
+                        <p>Above is my avatar from the Penetration Testing environment HackTheBox.eu </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="wrapper">
 
-                        <img class="media" src="imgs/final.png" alt="this is the encoded image">
+                        <img class="media" src="imgs/image1.png" alt="this is the encoded image">
                         <p>But what is the difference between the two images when they look they exact same?</p>
                     </div>
                 </div>
@@ -55,14 +55,17 @@
                 <div class="col-md-12 col-small-12">
                     <div class="wrapper">
                         <h3>With a technique called <strong>Steganography</strong></h3>
-                        <p> Although the term was first used was in 1499 by Johannes Trithemius, modern Steganography entered the world in 1985. Steganography is the practice of concealing a file, message, image, or video within another file image or video.Typically,
-                            the message that is hidden looks to be part of something else. Like with the example above, being unnoticeable, by staying visible in a setting that masks presence. Steganographic encrypted messages doesn't attract as much
-                            attention as using conventional cryptography. Unless the person viewing the file knows to look for it, they wouldn't know that anything even happened. With the digital world we live in today JavaScript has become a easy way
-                            for us to be able to accomplish this. Thanks to the Steganography.js library created by <a class="a" href="www.peter-eigenschink.at">Peter Eigenschink</a></p>
+                        <p> Although the term was first used was in 1499 by Johannes Trithemius, modern Steganography entered the world in 1985. Steganography is the practice of concealing a file, message, image, or video within another file image or video.</p>
+
+                        <p>Typically, the message that is hidden looks to be part of something else. Like with the example above, being unnoticeable, by staying visible in a setting that masks presence. Steganographic encrypted messages don't attract as
+                            much attention as using conventional cryptography. Unless the person viewing the file knows to look for it, they wouldn't know that anything even happened. Sadly, it hasn't always been this easy. In the early days of the printing
+                            press, it was common to mix different typefaces on a printed page because the printer did not have enough copies of somne letters in one typeface. Thus, a message could be hidden by using two or more different typefaces, such
+                            as normal or italic. Moving forward into history during World War II a spy for Japan by the name of Velvalee Dickinson, was in New York City. She would send information to accommodation addresses in the neutral South America.
+                            She happened to sells dolls, and her letters would discuss the quantity and type of dolls to ship. The stegotext was the doll orders, and the concealed "plaintext" was itself enocded and gave information about ship movements.</p>
+
+                        <p>With the digital world we live in, JavaScript has enabled us to find an easier way for us to be able to accomplish this task. Thanks to the Steganography.js library created by <a class="a" href="www.peter-eigenschink.at">Peter Eigenschink</a>.
+                            Check out his documentation to see how to decrypt my image and to try this out yourself! </p>
                         <br>
-                        <p>Check this library out in action! Choose an image from your device to hide a message inside of! Next type in the message you would like to hide within it. The image will appear below the first choose file option. Download that
-                            preview after hitting the Hide Message button, after that click the choose image and select the image you downloaded from your device. If you get into inspector next and open up your console your message will appear! Test this
-                            first with downloading the image on the right and choosing the second Choose File option to see what I</p>
                         <br>
                         <br>
                         <br>
@@ -72,18 +75,10 @@
                 </div>
             </div>
         </div>
+
+
+
     </section>
-
-    <input type="file" name="img" id="#" accept="image/*" onchange="readURL(this)">
-
-    <div class="">Source Image: </div>
-    <img id="image1" src="" alt="">
-
-    <input id="text" type="text">
-    <button onclick="hideText()">Hide Message Into Image</button>
-
-    <input type="file" name="img1" id="#2" accept="image/*" onchange="decode(this)">
-
 
 
 
