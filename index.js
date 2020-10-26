@@ -47,7 +47,3 @@ function decode(input) {
 }
 */
 // how reader.readAsDataURL works is within this input we will have a area containing the files that has been inserted by the user. Once this operation is complete the function gets triggered with the result of what the file has read
-
-
-
-//Now we are going to write the function to encode a message into the image the client uses once the submit button is clicked
